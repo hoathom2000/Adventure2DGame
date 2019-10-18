@@ -16,6 +16,7 @@ public class TurretAI : MonoBehaviour
     public bool lookingRight = true;
 
     public GameObject bullet;
+    public GameObject effect;
     public Transform target;
     public Animator anim;
     public Transform shootpointLeft, shootpointRight;
@@ -54,6 +55,7 @@ public class TurretAI : MonoBehaviour
         if (curHealth < 0)
         {
             sound.Playsound("destroy");
+            Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

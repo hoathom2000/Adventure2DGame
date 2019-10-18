@@ -159,7 +159,8 @@ public class Player : MonoBehaviour
             Destroy(col.gameObject);
         }
     }
-IEnumerator timecount(float time)
+
+    IEnumerator timecount(float time)
     {
         yield return new WaitForSeconds(time);
         maxspeed = 3f;
