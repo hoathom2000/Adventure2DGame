@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class explosion : MonoBehaviour
+public class Explosion : MonoBehaviour
 {
     public float lifetime = 1;
     // Start is called before the first frame update
